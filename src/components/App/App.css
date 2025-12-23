@@ -1,0 +1,15 @@
+.page {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+}
+
+.page__content {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100vh;
+  background: transparent url("../../assets/NewsExplorer-background.jpg")
+    no-repeat center / cover;
+}
