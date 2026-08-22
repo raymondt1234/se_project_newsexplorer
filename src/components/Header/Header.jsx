@@ -1,20 +1,11 @@
 import "./Header.css";
-import { NavLink } from "react-router-dom";
+import Navigation from "../Navigation/Navigation";
 
 function Header({ isLoggedIn }) {
   return (
     <header className="header">
       <p className="header__title">NewsExplorer</p>
-      <div className="header__link-container">
-        <NavLink to="/" className="header__link">
-          Home
-        </NavLink>
-        {isLoggedIn && (
-          <NavLink to="/saved-news" className="header__link">
-            Saved articles
-          </NavLink>
-        )}
-      </div>
+      <Navigation isLoggedIn={isLoggedIn} />
       {isLoggedIn ? (
         <button className="header__btn">User</button>
       ) : (
